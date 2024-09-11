@@ -1,0 +1,24 @@
+section.invest-section
+  .wrapper
+    .invest-section__container
+      img.invest-section__img(src="images/invest-section-img.png" loading="lazy" width="769" height="771" alt="image")
+      h2.invest-section__title.font-w-s-extra-bold.font-s-54.text-up
+        span.color-tomato О размере вложений 
+        | и условиях работы
+      .invest-section__sub-title.font-w-medium.font-s-22
+        | Выберите размер вашего города, чтобы получить детальную информацию
+      .swiper-invest
+        .invest-section__cards.swiper-wrapper
+          .invest-section__card.swiper-slide
+            .font-w-s-extra-bold.font-s-30 до 500 000 <br class="no-br"> жителей
+            img.invest-section__card-img(src="images/invest-section-card-img-1.jpg" loading="lazy" width="508" height="508" alt="image")
+            button.btn(data-remodal-target="modal-form-investments") узнать
+          .invest-section__card.invest-card-color-2.swiper-slide
+            .font-w-s-extra-bold.font-s-30 до 1 000 000 <br class="no-br"> жителей
+            img.invest-section__card-img(src="images/invest-section-card-img-2.jpg" loading="lazy" width="508" height="508" alt="image")
+            button.btn(data-remodal-target="modal-form-investments") узнать
+          .invest-section__card.invest-card-color-3.swiper-slide
+            .font-w-s-extra-bold.font-s-30 от 1 000 000 <br class="no-br"> жителей
+            img.invest-section__card-img(src="images/invest-section-card-img-3.jpg" loading="lazy" width="508" height="508" alt="image")
+            button.btn(data-remodal-target="modal-form-investments") узнать
+        .invest-pagination.swiper-progress-invest

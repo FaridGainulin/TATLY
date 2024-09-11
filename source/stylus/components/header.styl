@@ -1,0 +1,114 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-between
+    padding 11px 10px
+    border-radius: 10px
+    backdrop-filter: blur(15px);
+    background: linear-gradient(90.00deg, rgb(255, 255, 255) 22.208%,rgba(255, 255, 255, 0) 32.403%),rgba(255, 255, 255, 0.7)
+    +above($breakpoints.sm)
+      border-radius: 15px
+      padding 11px 20px
+    +above($breakpoints.md)
+      border-radius: 20px
+      padding 11px 25px
+    +above($breakpoints.xxl)
+      padding 11px 28px
+
+  &__brand
+    display: flex
+    align-items: center
+    +above($breakpoints.xxl)
+      gap: 16px
+
+  &__logo
+    width 120px
+    height: auto
+    +above($breakpoints.sm)
+      width 140px
+    +above($breakpoints.md)
+      width 230px
+    +above($breakpoints.xxl)
+      width 269px
+
+  &__text
+    display: flex
+    align-items: center
+    gap: 10px
+    +above($breakpoints.md)
+      gap: 22px
+
+  &__brand-name
+    background-color #E1EFB8
+    display: flex
+    justify-content center
+    align-items: center
+    border-radius: 35px
+    width 60px
+    height: 28px
+    +above($breakpoints.sm)
+      border-radius: 40px
+      width 60px
+      height: 28px
+    +above($breakpoints.md)
+      border-radius: 45px
+      width 90px
+      height: 38px
+    +above($breakpoints.xxl)
+      border-radius: 50px
+      width 96px
+      height: 42px
+
+  &__brand-title
+    display: none
+    +above($breakpoints.sm)
+      display: block
+
+  &__connection
+    display: flex
+    align-items: center
+    gap: 3px
+    +above($breakpoints.sm)
+      gap: 10px
+    +above($breakpoints.xxl)
+      gap: 21px
+
+  &__connection-icon
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      width 20px
+      height: 20px
+
+  &__call-me
+    display: none
+    +above($breakpoints.sm)
+      display: flex
+      align-items: center
+      justify-content center
+      width 135px
+      height: 28px
+      width 135px
+      height: 28px
+      border-radius: 21px;
+      box-shadow: inset 0px -2px 0px 0px rgba(142, 27, 27, 0.5);
+      background: radial-gradient(50.00% 32.00% at 50% 0%,rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0) 100%),rgb(232, 84, 98)
+      color: #fff
+      text-transform: uppercase
+      cursor: pointer
+      position relative
+      transition transform 0.5s, top 0.8s
+      &:hover
+        transform: scale(1.02)
+      &:active
+        top: 3px
+    +above($breakpoints.md)
+      width 155px
+      height: 35px
+    +above($breakpoints.xxl)
+      width 175px
+      height: 42px
+
+

@@ -1,0 +1,40 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-w-s-extra-bold.font-s-54.text-up
+        | Франшиза «ТАТЛЫ» 
+        span.color-tomato в цифрах
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-s-extra-bold.font-s-30.color-green 23 дня
+            .font-w-medium.font-s-18 займет открытие магазина
+          .finances-section__card.swiper-slide
+            .font-w-s-extra-bold.font-s-30.color-green 1 530 000 рублей
+            .font-w-medium.font-s-18 средний размер вложений
+          .finances-section__card.swiper-slide
+            .font-w-s-extra-bold.font-s-30.color-green 75 000 рублей
+            .font-w-medium.font-s-18 средняя ежемесячная прибыль
+          .finances-section__card.swiper-slide
+            .font-w-s-extra-bold.font-s-30.color-green 925 000 рублей
+            .font-w-medium.font-s-18 средняя ежемесячная выручка
+          .finances-section__card.swiper-slide
+            .font-w-s-extra-bold.font-s-30.color-green 1000 рублей
+            .font-w-medium.font-s-18 размер среднего чека
+          .finances-section__card.swiper-slide
+            .font-w-s-extra-bold.font-s-30.color-green 25-50%
+            .font-w-medium.font-s-18 размер наценки на товар
+        .finances-pagination.swiper-progress-finances
+      .finances-section__bottom
+        .font-w-semi-bold.font-s-28
+          | Хотите получить детальные цифры для 
+          br.no-br
+          | вашего города и под ваш бюджет?
+        .finances-section__bottom-text.font-w-regular.font-s-18 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input.input(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") скачать
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="1300" height="1134" alt="image")

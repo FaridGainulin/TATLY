@@ -1,0 +1,56 @@
+section.about-section
+  .wrapper
+    .about-section__container
+      h2.about-section__title.font-w-s-extra-bold.font-s-54.text-up.text-center
+        span.color-tomato За 8 лет работы 
+        | открыли 
+        br.no-br
+        | 2 прибыльных филиала
+      .about-section__body
+        .about-section__body-text.font-s-18
+          .about-section__body-title.font-w-m-medium
+            img.about-section__body-title-icon(src="images/about-section-body-title-icon.svg" loading="lazy" width="63" height="63" alt="icon")
+            span.color-tomato.font-w-m-semi-bold Сеть магазинов «ТАТЛЫ» 
+            | была запущена 8 лет назад 
+            br.no-br-xxl
+            | в Казани. Концепция наших точек продаж — 
+            br.no-br-xxl
+            | это современная бакалея, где покупатели могут 
+            br.no-br-xxl
+            | приобрести оригинальные замороженные десерты 
+            br.no-br-xxl
+            | и натуральные полуфабрикаты домашнего качества, 
+            br.no-br-xxl
+            | без вредных добавок.
+          .font-w-m-regular
+            | Весь мир сейчас переходит на замороженную продукцию, 
+            br.no-br-xxl
+            | поскольку это удобно, вкусно и недорого. Кроме того, 
+            br.no-br-xxl
+            | это позволяет сэкономить время на приготовление блюд, 
+            br.no-br-xxl
+            | что 
+            span.color-tomato особенно актуально при текущем ритме жизни.
+            br
+            br
+            | Запуская свой первый магазин по франшизе «ТАТЛЫ», 
+            br.no-br-xxl
+            span.color-tomato вы получаете комплексную помощь и поддержку от нашей 
+            br.no-br-xxl
+            span.color-tomato команды. 
+            | Мы знаем, как выбрать подходящую локацию, какая 
+            br.no-br-xxl
+            | продукция продаётся лучше всего, а также как развивать 
+            br.no-br-xxl
+            | и масштабировать собственную сеть магазинов.
+        img.about-section__img(src="images/about-section-img.jpg" loading="lazy" width="1000" height="902" alt="image")
+      .about-section__bottom
+        .font-w-semi-bold.font-s-28.text-center Задайте все интересующие вас вопросы команде «ТАТЛЫ»
+        form.about-section__form(data-feedback-form)
+          input.input.input(type="text" name="answer" autocomplete="off" placeholder="Текст вопроса")
+          input.input.input.about-items(type="text" name="name" autocomplete="off" placeholder="Ваше имя")
+          input.input.input.about-items(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn.btn.about-items(type="submit") задать вопрос
+        .finances-section__agree-wrapper
+          include ../components/agree.pug
+      img.about-section__img-bottom(src="images/about-section-img-bottom.png" loading="lazy" width="1404" height="922" alt="image")

@@ -1,0 +1,21 @@
+section.city-section
+  img.city-section__arc(src="images/city-section-arc.png" loading="lazy" width="1920" height="90" alt="image")
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-s-extra-bold.font-s-70.text-up
+        | Станьте владельцем 
+        br.no-br
+        span.color-tomato собственной сети 
+        br.no-br
+        span.color-tomato магазинов
+      .city-section__sub-title.font-w-s-extra-bold.font-s-53
+        | с франшизой «ТАТЛЫ»
+      .city-section__bottom
+        .font-w-semi-bold.font-s-28 Проверьте, свободен ли ваш город для работы
+        form.city-section__form(data-feedback-form)
+          input.input(type="text" name="city" autocomplete="off" placeholder="Ваш город")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Ваш телефон")
+          button.btn(type="submit") проверить
+        .city-section__agree-wrapper
+          include ../components/agree.pug
+      img.city-section__img(src="images/city-section-img.png" loading="lazy" width="1766" height="1612" alt="image")

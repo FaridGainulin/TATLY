@@ -1,0 +1,101 @@
+.invest-section
+  // background-image: url('../images/invest-section-bg.jpg')
+  // background-repeat: no-repeat
+  // background-position: center
+  // background-size: cover
+  background-color #fff
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    padding 20px 0 1px 0
+    +above($breakpoints.sm)
+      padding 60px 0 60px 0
+    +above($breakpoints.md)
+      padding 90px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 130px 0 142px 0
+
+  &__img
+    position: absolute
+    z-index -1
+    width: 320px;
+    height: auto;
+    top: 0px;
+    right: -150px;
+    +above($breakpoints.sm)
+      width: 352px;
+      top: 28px;
+      right: -173px;
+    +above($breakpoints.md)
+      width: 569px;
+      top: -2px;
+      right: -273px;
+    +above($breakpoints.xxl)
+      width: 769px;
+      top: 3px;
+      right: -370px;
+
+  &__sub-title
+    padding 15px 0 20px 0
+    +above($breakpoints.sm)
+      padding 20px 0 40px 0
+    +above($breakpoints.md)
+      padding 20px 0 60px 0
+    +above($breakpoints.xxl)
+      padding 22px 0 82px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 20px
+
+  &__card
+    width 280px !important
+    border-radius: 20px
+    background-color #ECF8CA
+    padding 15px
+    +above($breakpoints.sm)
+      width 235px !important
+      padding 20px
+    +above($breakpoints.md)
+      width 308px !important
+      padding 25px
+    +above($breakpoints.xxl)
+      width 380px !important
+      height: 556px
+      padding 30px
+
+  &__card-img
+      width 210px
+      height: auto
+      border-radius: 50%
+      border: 15px solid #E1F0B6
+      margin 20px auto 20px
+      +above($breakpoints.sm)
+        width 190px
+        border: 13px solid #E1F0B6
+        margin 20px auto 25px
+      +above($breakpoints.md)
+        width 230px
+        border: 16px solid #E1F0B6
+        margin 25px auto 30px
+      +above($breakpoints.xxl)
+        width 290px
+        border: 18px solid #E1F0B6
+        margin 28px auto 36px
+
+.invest-card-color-2
+  background-color #97C86E
+  color: #fff
+  img
+    border-color: #A7D07E
+.invest-card-color-3
+  background-color #65963C
+  color: #fff
+  img
+    border-color: #729F49
